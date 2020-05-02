@@ -7,7 +7,7 @@ The objective of this Python program is to teach the car to go to the end point 
 <br/>
 <br/>
 
-After training and self-learning based on the reward system, and 1000 episodes later, the behavior of the car is transformed into the below (10 episodes):
+After training and self-learning based on the reward system, and almost 1000 episodes later, the behavior of the car is transformed into the below (10 episodes):
 
 ![png](Learned.gif)
 
