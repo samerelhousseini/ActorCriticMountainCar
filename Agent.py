@@ -21,6 +21,11 @@ class Agent(object):
         self.policy = Policy(env, nn_dims)
         self.critic = Critic(env, cr_dims)
         
+        self.policy_dims = nn_dims
+        self.critic_dims = cr_dims
+        
+        self.env_name = env_name
+        
         self.rewards = 0
         
         self.loss_history = []
@@ -46,8 +51,11 @@ class Agent(object):
             for n in self.critic_dims:
                 cr += str(n) + '-'
             
-            ac_filename = './Weights/'+self.env_name+'Actor-'+ac
-            cr_filename = './Weights/'+self.env_name+'Critic-'+cr
+            ac = ac[:-1]
+            cr = cr[:-1]
+            
+            ac_filename = './Weights/MountainCar-Actor-'+ac
+            cr_filename = './Weights/MountainCar-Critic-'+cr
         else:
             ac_filename = './Weights/Actor-'+filename
             cr_filename = './Weights/Critic-'+filename

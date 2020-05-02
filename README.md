@@ -1,3 +1,24 @@
+# Deep Reinforcement Learning: Actor Critic for Mountain Car
+
+The objective of this Python program is to teach the car to go to the end point on the mountain, through deep reinforcement learning. The unlearned behavior is shown below (10 episodes):
+
+
+![png](Unlearned.gif)
+<br/>
+<br/>
+
+After training and self-learning based on the reward system, and 1000 episodes later, the behavior of the car is transformed into the below (10 episodes):
+
+![png](Learned.gif)
+
+The car learns, through rewards, to speed up back and forth, until it reaches the end point on the mountain at the right side of the screen. Below is the notebook, that calls the python files in the same repo.
+
+<br/>
+<br/>
+
+
+
+
 ```python
 import gym
 from Agent import Agent
